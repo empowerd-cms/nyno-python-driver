@@ -3,7 +3,7 @@ Python client for Nyno (https://nyno.dev) server.
 
 ## Installation
 ```bash
-pip install nyno # or: uv add nyno
+uv add nyno # or: pip install nyno
 ```
 
 ## Usage
