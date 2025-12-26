@@ -27,6 +27,7 @@ if __name__ == "__main__":
 
 # Build package
 ```
+uv pip install build
 uv run python -m build
 ```
 

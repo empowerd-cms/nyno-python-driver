@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nyno"
-version = "0.0.5"
+version = "1.0.0"
 description = "Python client for Nyno server (nyno.dev)"
 readme = "README.md"
 license = {text = "MIT"}
