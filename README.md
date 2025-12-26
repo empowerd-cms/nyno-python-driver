@@ -16,7 +16,9 @@ def main():
         host="127.0.0.1",
         port=9024,
     )
-    print("workflow test", client.run_workflow('/test'))
+ 
+    data = {} # optional key value data
+    print("workflow test", client.run_workflow('/test',data))
     print("Client created:", client)
 
 if __name__ == "__main__":
