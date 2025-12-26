@@ -4,19 +4,36 @@ Python client for Nyno (https://nyno.dev) server.
 ## Installation
 ```bash
 pip install nyno # or: uv add nyno
-
+```
 
 ## Usage
+```
 from nyno import NynoClient
 
-client = NynoClient(credentials="change_me")
+def main():
+    client = NynoClient(
+        credentials="change_me",
+        host="127.0.0.1",
+        port=9024,
+    )
+    print("workflow test", client.run_workflow('/test'))
+    print("Client created:", client)
+
+if __name__ == "__main__":
+    main()
+```
+
 
 
 # Build package
+```
 uv run python -m build
+```
 
 # Upload
+```
 uv run python -m twine upload dist/*          
+```
 
 # PyPI
 https://pypi.org/project/nyno/
